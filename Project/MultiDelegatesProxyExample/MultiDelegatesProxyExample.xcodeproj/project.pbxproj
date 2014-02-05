@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		21FBE5B118A287680019C32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FBE5B018A287680019C32D /* Foundation.framework */; };
+		21FBE5B318A287680019C32D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FBE5B218A287680019C32D /* CoreGraphics.framework */; };
+		21FBE5B518A287680019C32D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FBE5B418A287680019C32D /* UIKit.framework */; };
+		21FBE5BB18A287680019C32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21FBE5B918A287680019C32D /* InfoPlist.strings */; };
+		21FBE5BD18A287680019C32D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FBE5BC18A287680019C32D /* main.m */; };
+		21FBE5C118A287680019C32D /* DMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FBE5C018A287680019C32D /* DMAppDelegate.m */; };
+		21FBE5C318A287680019C32D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21FBE5C218A287680019C32D /* Images.xcassets */; };
+		21FBE5CA18A287680019C32D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FBE5C918A287680019C32D /* XCTest.framework */; };
+		21FBE5CB18A287680019C32D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FBE5B018A287680019C32D /* Foundation.framework */; };
+		21FBE5CC18A287680019C32D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21FBE5B418A287680019C32D /* UIKit.framework */; };
+		21FBE5D418A287680019C32D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 21FBE5D218A287680019C32D /* InfoPlist.strings */; };
+		21FBE5D618A287680019C32D /* MultiDelegatesProxyExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FBE5D518A287680019C32D /* MultiDelegatesProxyExampleTests.m */; };
+		21FBE5E118A2878D0019C32D /* DMMultiDelegatesProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FBE5E018A2878D0019C32D /* DMMultiDelegatesProxy.m */; };
+		21FBE5E818A2B91F0019C32D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FBE5E618A2B91F0019C32D /* MainViewController.m */; };
+		21FBE5E918A2B91F0019C32D /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21FBE5E718A2B91F0019C32D /* MainViewController.xib */; };
+		21FBE5EC18A2C2140019C32D /* landscape.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 21FBE5EB18A2C2140019C32D /* landscape.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21FBE5CD18A287680019C32D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 21FBE5A518A287680019C32D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21FBE5AC18A287680019C32D;
+			remoteInfo = MultiDelegatesProxyExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		21FBE5AD18A287680019C32D /* MultiDelegatesProxyExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiDelegatesProxyExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FBE5B018A287680019C32D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		21FBE5B218A287680019C32D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		21FBE5B418A287680019C32D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		21FBE5B818A287680019C32D /* MultiDelegatesProxyExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiDelegatesProxyExample-Info.plist"; sourceTree = "<group>"; };
+		21FBE5BA18A287680019C32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21FBE5BC18A287680019C32D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		21FBE5BE18A287680019C32D /* MultiDelegatesProxyExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MultiDelegatesProxyExample-Prefix.pch"; sourceTree = "<group>"; };
+		21FBE5BF18A287680019C32D /* DMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAppDelegate.h; sourceTree = "<group>"; };
+		21FBE5C018A287680019C32D /* DMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAppDelegate.m; sourceTree = "<group>"; };
+		21FBE5C218A287680019C32D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		21FBE5C818A287680019C32D /* MultiDelegatesProxyExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiDelegatesProxyExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21FBE5C918A287680019C32D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		21FBE5D118A287680019C32D /* MultiDelegatesProxyExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MultiDelegatesProxyExampleTests-Info.plist"; sourceTree = "<group>"; };
+		21FBE5D318A287680019C32D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		21FBE5D518A287680019C32D /* MultiDelegatesProxyExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiDelegatesProxyExampleTests.m; sourceTree = "<group>"; };
+		21FBE5DF18A2878D0019C32D /* DMMultiDelegatesProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMMultiDelegatesProxy.h; path = ../../../Classes/DMMultiDelegatesProxy.h; sourceTree = "<group>"; };
+		21FBE5E018A2878D0019C32D /* DMMultiDelegatesProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMMultiDelegatesProxy.m; path = ../../../Classes/DMMultiDelegatesProxy.m; sourceTree = "<group>"; };
+		21FBE5E518A2B91F0019C32D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		21FBE5E618A2B91F0019C32D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		21FBE5E718A2B91F0019C32D /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		21FBE5EB18A2C2140019C32D /* landscape.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = landscape.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		21FBE5AA18A287680019C32D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FBE5B318A287680019C32D /* CoreGraphics.framework in Frameworks */,
+				21FBE5B518A287680019C32D /* UIKit.framework in Frameworks */,
+				21FBE5B118A287680019C32D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FBE5C518A287680019C32D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FBE5CA18A287680019C32D /* XCTest.framework in Frameworks */,
+				21FBE5CC18A287680019C32D /* UIKit.framework in Frameworks */,
+				21FBE5CB18A287680019C32D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		21FBE5A418A287680019C32D = {
+			isa = PBXGroup;
+			children = (
+				21FBE5B618A287680019C32D /* MultiDelegatesProxyExample */,
+				21FBE5CF18A287680019C32D /* MultiDelegatesProxyExampleTests */,
+				21FBE5AF18A287680019C32D /* Frameworks */,
+				21FBE5AE18A287680019C32D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		21FBE5AE18A287680019C32D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5AD18A287680019C32D /* MultiDelegatesProxyExample.app */,
+				21FBE5C818A287680019C32D /* MultiDelegatesProxyExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		21FBE5AF18A287680019C32D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5B018A287680019C32D /* Foundation.framework */,
+				21FBE5B218A287680019C32D /* CoreGraphics.framework */,
+				21FBE5B418A287680019C32D /* UIKit.framework */,
+				21FBE5C918A287680019C32D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21FBE5B618A287680019C32D /* MultiDelegatesProxyExample */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5BF18A287680019C32D /* DMAppDelegate.h */,
+				21FBE5C018A287680019C32D /* DMAppDelegate.m */,
+				21FBE5EA18A2B9250019C32D /* Main View Controller */,
+				21FBE5C218A287680019C32D /* Images.xcassets */,
+				21FBE5B718A287680019C32D /* Supporting Files */,
+				21FBE5E218A287930019C32D /* DMMultiDelegatesProxy */,
+			);
+			path = MultiDelegatesProxyExample;
+			sourceTree = "<group>";
+		};
+		21FBE5B718A287680019C32D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5B818A287680019C32D /* MultiDelegatesProxyExample-Info.plist */,
+				21FBE5B918A287680019C32D /* InfoPlist.strings */,
+				21FBE5BC18A287680019C32D /* main.m */,
+				21FBE5BE18A287680019C32D /* MultiDelegatesProxyExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21FBE5CF18A287680019C32D /* MultiDelegatesProxyExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5D518A287680019C32D /* MultiDelegatesProxyExampleTests.m */,
+				21FBE5D018A287680019C32D /* Supporting Files */,
+			);
+			path = MultiDelegatesProxyExampleTests;
+			sourceTree = "<group>";
+		};
+		21FBE5D018A287680019C32D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5D118A287680019C32D /* MultiDelegatesProxyExampleTests-Info.plist */,
+				21FBE5D218A287680019C32D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21FBE5E218A287930019C32D /* DMMultiDelegatesProxy */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5DF18A2878D0019C32D /* DMMultiDelegatesProxy.h */,
+				21FBE5E018A2878D0019C32D /* DMMultiDelegatesProxy.m */,
+			);
+			name = DMMultiDelegatesProxy;
+			sourceTree = "<group>";
+		};
+		21FBE5EA18A2B9250019C32D /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				21FBE5E518A2B91F0019C32D /* MainViewController.h */,
+				21FBE5E618A2B91F0019C32D /* MainViewController.m */,
+				21FBE5E718A2B91F0019C32D /* MainViewController.xib */,
+				21FBE5EB18A2C2140019C32D /* landscape.jpg */,
+			);
+			name = "Main View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		21FBE5AC18A287680019C32D /* MultiDelegatesProxyExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FBE5D918A287680019C32D /* Build configuration list for PBXNativeTarget "MultiDelegatesProxyExample" */;
+			buildPhases = (
+				21FBE5A918A287680019C32D /* Sources */,
+				21FBE5AA18A287680019C32D /* Frameworks */,
+				21FBE5AB18A287680019C32D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiDelegatesProxyExample;
+			productName = MultiDelegatesProxyExample;
+			productReference = 21FBE5AD18A287680019C32D /* MultiDelegatesProxyExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		21FBE5C718A287680019C32D /* MultiDelegatesProxyExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21FBE5DC18A287680019C32D /* Build configuration list for PBXNativeTarget "MultiDelegatesProxyExampleTests" */;
+			buildPhases = (
+				21FBE5C418A287680019C32D /* Sources */,
+				21FBE5C518A287680019C32D /* Frameworks */,
+				21FBE5C618A287680019C32D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21FBE5CE18A287680019C32D /* PBXTargetDependency */,
+			);
+			name = MultiDelegatesProxyExampleTests;
+			productName = MultiDelegatesProxyExampleTests;
+			productReference = 21FBE5C818A287680019C32D /* MultiDelegatesProxyExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		21FBE5A518A287680019C32D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DM;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = danielemargutti;
+				TargetAttributes = {
+					21FBE5C718A287680019C32D = {
+						TestTargetID = 21FBE5AC18A287680019C32D;
+					};
+				};
+			};
+			buildConfigurationList = 21FBE5A818A287680019C32D /* Build configuration list for PBXProject "MultiDelegatesProxyExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 21FBE5A418A287680019C32D;
+			productRefGroup = 21FBE5AE18A287680019C32D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				21FBE5AC18A287680019C32D /* MultiDelegatesProxyExample */,
+				21FBE5C718A287680019C32D /* MultiDelegatesProxyExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		21FBE5AB18A287680019C32D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FBE5BB18A287680019C32D /* InfoPlist.strings in Resources */,
+				21FBE5E918A2B91F0019C32D /* MainViewController.xib in Resources */,
+				21FBE5C318A287680019C32D /* Images.xcassets in Resources */,
+				21FBE5EC18A2C2140019C32D /* landscape.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FBE5C618A287680019C32D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FBE5D418A287680019C32D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		21FBE5A918A287680019C32D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FBE5E118A2878D0019C32D /* DMMultiDelegatesProxy.m in Sources */,
+				21FBE5BD18A287680019C32D /* main.m in Sources */,
+				21FBE5C118A287680019C32D /* DMAppDelegate.m in Sources */,
+				21FBE5E818A2B91F0019C32D /* MainViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21FBE5C418A287680019C32D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21FBE5D618A287680019C32D /* MultiDelegatesProxyExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21FBE5CE18A287680019C32D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 21FBE5AC18A287680019C32D /* MultiDelegatesProxyExample */;
+			targetProxy = 21FBE5CD18A287680019C32D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		21FBE5B918A287680019C32D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FBE5BA18A287680019C32D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		21FBE5D218A287680019C32D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				21FBE5D318A287680019C32D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		21FBE5D718A287680019C32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		21FBE5D818A287680019C32D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		21FBE5DA18A287680019C32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDelegatesProxyExample/MultiDelegatesProxyExample-Prefix.pch";
+				INFOPLIST_FILE = "MultiDelegatesProxyExample/MultiDelegatesProxyExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		21FBE5DB18A287680019C32D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDelegatesProxyExample/MultiDelegatesProxyExample-Prefix.pch";
+				INFOPLIST_FILE = "MultiDelegatesProxyExample/MultiDelegatesProxyExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		21FBE5DD18A287680019C32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiDelegatesProxyExample.app/MultiDelegatesProxyExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDelegatesProxyExample/MultiDelegatesProxyExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MultiDelegatesProxyExampleTests/MultiDelegatesProxyExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		21FBE5DE18A287680019C32D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MultiDelegatesProxyExample.app/MultiDelegatesProxyExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MultiDelegatesProxyExample/MultiDelegatesProxyExample-Prefix.pch";
+				INFOPLIST_FILE = "MultiDelegatesProxyExampleTests/MultiDelegatesProxyExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		21FBE5A818A287680019C32D /* Build configuration list for PBXProject "MultiDelegatesProxyExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FBE5D718A287680019C32D /* Debug */,
+				21FBE5D818A287680019C32D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FBE5D918A287680019C32D /* Build configuration list for PBXNativeTarget "MultiDelegatesProxyExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FBE5DA18A287680019C32D /* Debug */,
+				21FBE5DB18A287680019C32D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21FBE5DC18A287680019C32D /* Build configuration list for PBXNativeTarget "MultiDelegatesProxyExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21FBE5DD18A287680019C32D /* Debug */,
+				21FBE5DE18A287680019C32D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 21FBE5A518A287680019C32D /* Project object */;
+}
