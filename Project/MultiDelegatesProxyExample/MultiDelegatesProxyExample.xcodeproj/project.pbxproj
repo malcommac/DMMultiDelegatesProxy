@@ -130,6 +130,7 @@
 		21FBE5B718A287680019C32D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				21FBE5EB18A2C2140019C32D /* landscape.jpg */,
 				21FBE5B818A287680019C32D /* MultiDelegatesProxyExample-Info.plist */,
 				21FBE5B918A287680019C32D /* InfoPlist.strings */,
 				21FBE5BC18A287680019C32D /* main.m */,
@@ -171,7 +172,6 @@
 				21FBE5E518A2B91F0019C32D /* MainViewController.h */,
 				21FBE5E618A2B91F0019C32D /* MainViewController.m */,
 				21FBE5E718A2B91F0019C32D /* MainViewController.xib */,
-				21FBE5EB18A2C2140019C32D /* landscape.jpg */,
 			);
 			name = "Main View Controller";
 			sourceTree = "<group>";
