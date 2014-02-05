@@ -1,7 +1,5 @@
 # DMMultiDelegatesProxy
 
-dd
-
 [![Version](http://cocoapod-badges.herokuapp.com/v/DMMultiDelegatesProxy/badge.png)](http://cocoadocs.org/docsets/DMMultiDelegatesProxy)
 [![Platform](http://cocoapod-badges.herokuapp.com/p/DMMultiDelegatesProxy/badge.png)](http://cocoadocs.org/docsets/DMMultiDelegatesProxy)
 
