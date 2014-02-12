@@ -19,7 +19,7 @@
 /**
  *  Main delegate is like any other delegate but it's used to get the value for method which need something to return
  */
-@property (nonatomic,strong)	id			 mainDelegate;
+@property (nonatomic,weak)	id			 mainDelegate;
 
 /**
  *  Allocate a new proxy object which can handle multiple delegates. Set it as delegate for your target class.

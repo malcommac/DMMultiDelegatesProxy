@@ -8,10 +8,9 @@
 
 #import "DMMultiDelegatesProxy.h"
 
-@interface DMMultiDelegatesProxy () {
-	NSMutableArray		*nonRetainedDelegates;
-	NSValue				*nonRetainedMainDelegate;
-}
+@interface DMMultiDelegatesProxy () { }
+
+@property (nonatomic,strong)	NSPointerArray *delegatesPointerArray;
 
 @end
 
@@ -37,19 +36,15 @@
 #pragma mark - Message Forwarding -
 
 - (NSMethodSignature *) methodSignatureForSelector:(SEL)selector {
-    for (NSValue *nonRetainedValue in nonRetainedDelegates) {
-        id delegateObj = nonRetainedValue.nonretainedObjectValue;
-		return [[delegateObj class] instanceMethodSignatureForSelector:selector];
-    }
-	return nil;
+	return [[self.mainDelegate class] instanceMethodSignatureForSelector:selector];
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
-    for (NSValue *nonRetainedValue in nonRetainedDelegates) {
-        id delegateObj = nonRetainedValue.nonretainedObjectValue;
+	if ([self.mainDelegate respondsToSelector:aSelector])
+		return YES;
+    for (id delegateObj in self.delegatesPointerArray.allObjects)
         if ([delegateObj respondsToSelector:aSelector])
             return YES;
-    }
     return NO;
 }
 
@@ -68,8 +63,7 @@
 		[targetInvocation setSelector:invocation.selector];
 	}
 	
-	for (NSValue *nonRetainedValue in nonRetainedDelegates) {
-		id delegateObj = nonRetainedValue.nonretainedObjectValue;
+	for (id delegateObj in self.delegatesPointerArray.allObjects) {
 		if ([delegateObj respondsToSelector:invocation.selector])
 			[targetInvocation invokeWithTarget:delegateObj];
     }
@@ -77,25 +71,15 @@
 
 #pragma mark - Properties -
 
-- (void) setMainDelegate:(id)aMainDelegate {
-	nonRetainedMainDelegate = [NSValue valueWithNonretainedObject:aMainDelegate];
-}
-
-- (id) mainDelegate {
-	return nonRetainedMainDelegate.nonretainedObjectValue;
-}
-
-- (void)setDelegates:(NSArray *)delegates {
-	nonRetainedDelegates = [[NSMutableArray alloc] initWithCapacity:delegates.count];
-	for (id currentDelegate in delegates)
-		[nonRetainedDelegates addObject:[NSValue valueWithNonretainedObject:currentDelegate]];
+- (void)setDelegates:(NSArray *)aNewDelegates {
+	self.delegatesPointerArray = [NSPointerArray weakObjectsPointerArray];
+    [aNewDelegates enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [self.delegatesPointerArray addPointer:(void *)obj];
+    }];
 }
 
 - (NSArray *) delegates {
-	NSMutableArray *aDelegates = [[NSMutableArray alloc] init];
-	for (NSValue *nonRetainedDelegate in nonRetainedDelegates)
-		[aDelegates addObject:[nonRetainedDelegate nonretainedObjectValue]];
-	return aDelegates;
+	return self.delegatesPointerArray.allObjects;
 }
 
 @end
